@@ -17,13 +17,6 @@ video {
   margin-top: 16px;
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
 body {
   background: #000;
 }
@@ -94,11 +87,18 @@ body {
   line-height: normal;
   margin-top: 10px;
 }
+.lune {
+  margin-left: 100px;
+}
 
 .top_background {
   border-radius: 0px 0px 20px 20px;
   border-bottom: 2px solid #2c0000;
-  background: linear-gradient(180deg, #000 0%, #620000 100%);
+  background: url(../img/vector_Red.png) no-repeat bottom right,
+    linear-gradient(180deg, #000 0%, #620000 100%);
+}
+.burger_background {
+  background: url(../img/Vector_White.png) no-repeat top right;
 }
 .bouton {
   display: flex;
@@ -148,6 +148,10 @@ body {
 .Philosophie {
   border-radius: 0px 72px 72px 72px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 70px;
+}
+.valeur_all {
+  margin-top: 70px;
 }
 .valeur-title {
   color: #fffdcb;
@@ -162,7 +166,7 @@ body {
   width: 526px;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 100px;
+  margin-top: 300px;
 }
 
 .boutonred1 {
@@ -220,8 +224,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   align-self: stretch;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 .boutonyellow {
   display: flex;
@@ -241,7 +246,7 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-top: 40px;
+  margin-top: 20px;
   transition: transform 0.2s;
 }
 .boutonyellow:hover {
@@ -270,6 +275,7 @@ body {
 .img2 {
   border-radius: 72px 0px 82px 82px;
   border: 2px solid #9f0000;
+  margin-top: 70px;
 }
 .title.cave {
   color: #fff;
@@ -333,7 +339,11 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-top: 35px;
+  margin-top: 17px;
+  transition: transform 0.2s;
+}
+.boutonred:hover {
+  transform: scale(1.1);
 }
 .boutonred1 {
   color: #fff;
@@ -382,6 +392,8 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 .Newletter_all {
   display: flex;
@@ -390,6 +402,7 @@ body {
   gap: 7px 4px;
   align-self: stretch;
   flex-wrap: wrap;
+  margin-top: 45px;
 }
 .newsletter_title {
   display: flex;
@@ -419,8 +432,11 @@ body {
 .footer_all {
   border-top: 1px solid #620000;
 }
+.logo1 {
+  margin-top: 55px;
+}
 .app_logo {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 .Email_all {
   display: flex;
@@ -483,6 +499,7 @@ body {
   align-items: flex-start;
   gap: 9px;
   align-self: stretch;
+  margin-top: 45px;
 }
 .Contact1 {
   color: #fff;
@@ -536,6 +553,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: -2px;
+  margin-top: 30px;
 }
 .Horaire {
   color: #fff;
