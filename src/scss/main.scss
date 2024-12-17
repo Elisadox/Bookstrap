@@ -117,7 +117,7 @@ body {
 }
 .lune {
   margin-left: 100px;
-  transition: transform 10s;
+  transition: transform 0.5 ease-in;
 }
 .lune:hover {
   width: 375px;
