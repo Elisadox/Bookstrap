@@ -46,6 +46,26 @@ body {
   font-weight: 500;
   line-height: normal;
 }
+.no-underline {
+  text-decoration: none;
+}
+.headertexte_Red {
+  color: #c10000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+.headertexte_Yellow {
+  color: #fffdcb;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 .headertexte2 {
   color: #c10000;
   font-family: Montserrat;
@@ -97,6 +117,11 @@ body {
 }
 .lune {
   margin-left: 100px;
+  transition: transform 10s;
+}
+.lune:hover {
+  width: 375px;
+  height: 357px;
 }
 
 .top_background {
@@ -130,7 +155,7 @@ body {
   transition: transform 0.2s;
 }
 .bouton:hover {
-  transform: scale(1.1);
+  font-weight: 500;
 }
 .winesoustitre {
   color: #c10000;
@@ -138,7 +163,6 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 100;
-  line-height: 38px; /* 105.556% */
 }
 .wine-title {
   color: #c10000;
@@ -199,7 +223,7 @@ body {
   transition: transform 0.2s;
 }
 .boutonred1:hover {
-  transform: scale(1.1);
+  font-weight: 500;
 }
 .Valeur-soustitre {
   color: #fffdcb;
@@ -258,7 +282,7 @@ body {
   transition: transform 0.2s;
 }
 .boutonyellow:hover {
-  transform: scale(1.1);
+  font-weight: 500;
 }
 
 .vigneronne-title {
@@ -299,10 +323,15 @@ body {
   align-items: center;
   gap: 30px;
 }
-.img.cave {
+.imgcave {
   width: 193px;
   height: 234px;
   border-radius: 10px;
+  transition: transform 2s;
+}
+.imgcave:hover {
+  width: 200px;
+  height: 260px;
 }
 .boutonwhite {
   display: flex;
@@ -327,7 +356,7 @@ body {
 }
 
 .boutonwhite:hover {
-  transform: scale(1.1);
+  font-weight: 500;
 }
 .boutonred {
   border-radius: 10px 0px 10px 10px;
@@ -351,7 +380,7 @@ body {
   transition: transform 0.2s;
 }
 .boutonred:hover {
-  transform: scale(1.1);
+  font-weight: 500;
 }
 .boutonred1 {
   color: #fff;
@@ -537,9 +566,9 @@ body {
 }
 .langue {
   display: flex;
-
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 19px;
 }
 .Francais {
   color: #620000;
@@ -663,6 +692,18 @@ body {
   text-decoration-skip-ink: auto;
   text-decoration-color: #f00;
 }
+.biblio_Yellow {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: #fffdcb;
+}
 .biblio_all {
   display: inline-flex;
   align-items: center;
@@ -671,6 +712,14 @@ body {
 }
 .titre_vin {
   color: #a60000;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+}
+.titre_vin_Yellow {
+  color: #fffdcb;
   font-family: Montserrat;
   font-size: 40px;
   font-style: italic;
@@ -713,7 +762,29 @@ body {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-
+.bouton_panier_Yellow {
+  display: flex;
+  width: 305px;
+  height: 46px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px 0px 10px 10px;
+  background: #fffdcb;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  transition: transform 0.2s;
+}
+.bouton_panier_Yellow:hover {
+  font-weight: 500;
+}
 .bouton_panier {
   color: #fff;
   text-align: center;
@@ -732,7 +803,13 @@ body {
   align-items: center;
   gap: 10px;
   margin-top: 6px;
+  margin-left: -140px;
+  transition: transform 0.2s;
 }
+.bouton_panier:hover {
+  font-weight: 500;
+}
+
 .cave_title {
   color: #fff;
   text-align: center;
@@ -767,6 +844,10 @@ body {
   gap: 10px;
   border-radius: 10px;
   border: 1px solid #fff;
+  transition: transform 0.2s;
+}
+.bouton_visite:hover {
+  font-weight: 500;
 }
 .texte_all {
   display: flex;
